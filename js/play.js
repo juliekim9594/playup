@@ -1,4 +1,20 @@
 $(document).ready(function(){
+  var $header = $(".main_wrap");
+      
+      var menuPos = $header.offset().top;
+
+    
+      $(window).on("scroll",function(){
+        var scrollY = window.pageYOffset;
+        if(scrollY > 400){
+          $header.addClass("fixed");
+        }else{
+          $header.removeClass("fixed");
+        }
+
+      
+
+      });
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
 
