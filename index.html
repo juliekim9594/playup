@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>부트스트랩</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+    	.navbar{background: #401d95;}
+    	#search{background: rgba(225,225,225,0.6);}
+    	img{max-width: 100%;}
+    	#pbtn{background: #401d95; color: #fff}
+    	#pbtn:hover{background: #BD9DE7;}
+    	#pbtn2{background: #a5193d; color: #fff}
+    	#pbtn2:hover{background: #e8ac74;}
+    	.bg-purple{background: #f7eeff}
+    	.bg-red{background: #feeeee;}
+    	.bg-modal{background: #401d95; color: #fff}
+    	.modal-btn{background: #BD9DE7; color: #f7eeff}
+    </style>
+</head>
+<body>
+	<div class="header">
+		<nav class="navbar navbar-dark bg-faded navbar-expand-md fixed-top">
+			<a class="navbar-brand" href="#">O'de Perfume</a>
+			<button class="navbar-toggler" data-toggle="collapse" data-target="#tmenu">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="tmenu">
+				<ul class="nav navbar-nav ml-auto">
+					<li class="nav-item active pr-3">
+						<a class="nav-link" href="#">Home</a>
+					</li>
+					<li class="nav-item pr-3">
+						<a class="nav-link" href="#perfume1">Euphoria</a>
+					</li>
+					<li class="nav-item pr-3">
+						<a class="nav-link" href="#perfume2">Epiphany</a>
+					</li>
+					<li class="nav-item pr-5">
+						<a class="nav-link" href="#contact">Contact</a>
+					</li>
+				</ul>
+				<form class="form-inline navbar-form pull-right">
+				<input class="form-control d-none d-md-block" type="text" placeholder="Search">
+				<button class="btn btn-success-outline d-none d-md-block" type="submit" id="search"><i class="fas fa-search"></i></button>
+				</form>
+			</div>
+			
+		</nav>
+	</div>
+	<div id="carousel-example-generic" class="carousel slide d-none d-md-block" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+		</ol>
+
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="images/img1.jpg" alt="First slide">
+			</div>
+			<div class="carousel-item">
+				<img src="images/img1.jpg" alt="First slide">
+			</div>
+			<div class="carousel-item">
+				<img src="images/img1.jpg" alt="First slide">
+			</div>
+		</div>
+		<a class="carousel-control-prev" href="#carousel-example-generic" data-slide="prev">
+			<span class="carousel-control-prev-icon"></span>
+		</a>
+		<a class="carousel-control-next" href="#carousel-example-generic" data-slide="next">
+			<span class="carousel-control-next-icon"></span>
+		</a>
+	</div>
+	<div class="pt-5 pb-5 bg-purple">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-7" id="perfume1" style="text-align: justify;">
+					<h2 style="color: #401d95">Euphoria</h2>
+					<p><strong>Present by.JK</strong></p>
+
+					<br>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti earum quod ipsam, quasi a aut neque ea fugit consequuntur harum.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, vel!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam dolorem ducimus odio explicabo iste sed delectus vitae porro optio dolorum impedit, necessitatibus modi magni, harum debitis, ratione maxime pariatur inventore.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum odit reiciendis aliquid, laborum, ab nostrum magnam! Sed laborum doloremque quisquam illum nam molestiae facilis quos.</p>
+					<a href="#" class="btn mb-5 mt-4" id="pbtn">More</a>
+				</div>
+				<div class="col-md-5 text-center"><img src="images/p1.png" alt="panel"></div>
+			</div>
+		</div>
+	</div>
+	<div class="pt-5 pb-5 bg-red">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5 text-center"><img src="images/p2.png" alt="panel"></div>
+				<div class="col-md-7" id="perfume2" style="text-align: justify;">
+					<h2 style="color: #a5193d">Epiphany</h2>
+					<p><strong>Present by.SJ</strong></p>
+					<br>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti earum quod ipsam, quasi a aut neque ea fugit consequuntur harum.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, vel!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam dolorem ducimus odio explicabo iste sed delectus vitae porro optio dolorum impedit, necessitatibus modi magni, harum debitis, ratione maxime pariatur inventore.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, architecto, doloribus nisi voluptas iure, sunt dicta eaque odit tenetur corporis aspernatur inventore consectetur, soluta excepturi?</p>
+					<a href="#" class="btn mb-5 mt-4" id="pbtn2">More</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="pt-5 pb-5 bg-modal">
+		<div class="container" id="contact">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h1>Contact Us</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, at.</p>
+					<a href="#myModal" class="btn modal-btn mt-4" data-toggle="modal">send E-mail</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="myModal">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">Error</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+						<span class="sr-only">Close</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>Can't sent E-mail</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+</body>
+</html>
