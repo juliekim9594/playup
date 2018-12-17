@@ -20,11 +20,7 @@
     color: #fec400 !important;
 }
 
-.box {
-    width: 100%;
-    height: 100vh;
-    _background: url(images/ex.jpg);
-}
+
 
 .text-area {
     position: absolute;
@@ -57,7 +53,7 @@
 
 .arrow:before,
 .arrow:after {
-    background: #000;
+    background: #fff;
     content: '';
     display: block;
     height: 3px;
@@ -130,3 +126,19 @@
 
 .navbar{transition: 0.3s}
 .fixed .navbar{background: rgba(0,0,0,.3); _margin:0px 20px; color:#fff; transition: 0.3s}
+
+/* Style the video: 100% width and height to cover the entire window */
+.bgpage{overflow:hidden; height: 100vh;}
+#myVideo {
+  position: relative;
+  height: 100vh;
+}
+
+.box {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0; left: 0;
+    color: #fff;
+    background: rgba(0,0,0,0.6);
+}
