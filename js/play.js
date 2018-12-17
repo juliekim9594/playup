@@ -43,4 +43,19 @@ $(document).ready(function(){
   $('.logo').on('click', function(){
     $('.navbar-collapse').collapse('hide');
 	});
+
+  var $sec = $(".makeup");
+      var secPos = $sec.offset().top;
+
+      $sec.css("opacity",0);
+      $(window).on("scroll",function(){
+        var scrollY = window.pageYOffset;
+        if(scrollY > secPos - 600){
+          $sec.stop().animate({left:100,opacity:1});
+        }else{
+          $sec.stop().animate({left:0});
+        }
+
+      });
+
 });
